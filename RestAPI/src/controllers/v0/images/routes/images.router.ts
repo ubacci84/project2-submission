@@ -45,10 +45,12 @@ router.get( "/filteredimage", async ( req, res ) => {
         .send(`File could not be processed!`);      
     }
 
-    ///////////////////////////////
-    // Testing some aws-sdk options
+    //////////////////////////////////////
+    // Experimenting some aws-sdk options
+    // Note: for testing only, should not give a s3 direct access to the user
+    /////////
     // Sending the filtered file to the s3 bucket
-    ///////////////////////////////////////////
+    /////////////////////////////////////////////
 /*    
     AWS.s3UploadFile(filtered_image_url).then(function(fromResolve: any){
         console.log(`Filtered image upload complete!\nurl: ${fromResolve}`)
@@ -57,7 +59,7 @@ router.get( "/filteredimage", async ( req, res ) => {
     })        
 */
 
-    res.status(200).sendFile(filtered_image_url, (err) => {
+    res.status(200).sendFile(filtered_image_url, (err: Error) => {
         ///////////////////////////////////////////////////////////////////
         //    4. deletes any files on the server on finish of the response 
         ////////////////////////////////////////////////////////////////////          
@@ -74,9 +76,12 @@ router.get( "/filteredimage", async ( req, res ) => {
 } );
 //! END @TODO1
 
-// Testing s3 through aws-sdk ONLY
-// -> should not give a s3 direct access to the user
+//////////////////////////////////////
+// Experimenting some aws-sdk options
+// Note: for testing only, should not give a s3 direct access to the user
+/////////
 // List the images contained in the s3 bucket
+/////////////////////////////////////////////
 router.get( "/list", async ( req, res ) => {
 
     // metadata structure for the objects stored in s3 bucket
@@ -121,9 +126,12 @@ router.get( "/list", async ( req, res ) => {
     });
 });    
 
-// Testing s3 through aws-sdk ONLY
-// -> should not give a s3 direct access to the user
+//////////////////////////////////////
+// Experimenting some aws-sdk options
+// Note: for testing only, should not give a s3 direct access to the user
+/////////
 // Upload a file to the s3 bucket
+//////////////////////////////////
 router.put( "/upload", async ( req, res ) => {
 
     let { file_path } = req.query;
@@ -150,9 +158,12 @@ router.put( "/upload", async ( req, res ) => {
     });  
 });
 
-// Testing s3 through aws-sdk ONLY
-// -> should not give a s3 direct access to the user
+//////////////////////////////////////
+// Experimenting some aws-sdk options
+// Note: for testing only, should not give a s3 direct access to the user
+////////
 // List the images contained in the s3 bucket
+//////////////////////////////////////////////
 router.delete( "/all", async ( req, res ) => {
 
     // metadata structure for the objects stored in s3 bucket
