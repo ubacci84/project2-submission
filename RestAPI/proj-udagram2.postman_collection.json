@@ -212,10 +212,9 @@
 	],
 	"variable": [
 		{
-			"id": "1df3d31a-de30-494b-a3d0-f1228dd8713c",
+			"id": "ce6c2600-19ab-40d3-a243-350857041470",
 			"key": "HOST",
-			"value": "localhost:8082",
-			"type": "string"
+			"value": "localhost:8082"
 		}
 	],
 	"protocolProfileBehavior": {}

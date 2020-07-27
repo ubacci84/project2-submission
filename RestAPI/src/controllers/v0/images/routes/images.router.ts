@@ -55,6 +55,7 @@ router.get( "/filteredimage", async ( req, res ) => {
     //////////////////////////////////////
     // Experimenting some aws-sdk options
     // Note: for testing only, should not give a s3 direct access to the user
+    // Note2: for now works only with tje local server
     /////////
     // Sending the filtered file to the s3 bucket
     /////////////////////////////////////////////

@@ -65,6 +65,7 @@ export function getPutSignedUrl( key: string ){
  * @Returns:
  *    metadata list of the s3 bucket content
  */
+// Note: for now works only with tje local server
 export let s3Object_list = function(strPrefix: string){
   return new Promise(function(resolve, reject){
 
@@ -94,6 +95,7 @@ export let s3Object_list = function(strPrefix: string){
  * @Returns:
  *    a url as a string
  */
+// Note: for now works only with tje local server
 export let s3UploadFile = function(fileURL: string){
   return new Promise(function(resolve, reject){
 
@@ -136,6 +138,7 @@ export let s3UploadFile = function(fileURL: string){
  * @Returns:
  *    reslut as a string
  */
+// Note: for now works only with tje local server
 export let s3Object_delete = function(strKey: string){
   return new Promise(function(resolve, reject){
     // Prepare the parameters
