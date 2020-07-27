@@ -4,6 +4,13 @@ import * as AWS from '../../../../aws';
 
 const router: Router = Router();
 
+  // Root Endpoint
+  // Displays a simple message to the user
+  router.get( "/", async ( req, res ) => {
+    res.send("try GET /api/v0/filteredimage?image_url={{}}")
+  } );
+
+
 // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
 // GET /filteredimage?image_url={{URL}}
 // endpoint to filter an image from a public url.
