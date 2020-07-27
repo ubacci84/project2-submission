@@ -108,84 +108,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "List images (s3 access with aws-sdk)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://{{HOST}}/api/v0/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
-					"protocol": "http",
-					"host": [
-						"{{HOST}}"
-					],
-					"path": [
-						"api",
-						"v0",
-						"filteredimage"
-					],
-					"query": [
-						{
-							"key": "image_url",
-							"value": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Upload image (s3 access with aws-sdk)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://{{HOST}}/api/v0/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
-					"protocol": "http",
-					"host": [
-						"{{HOST}}"
-					],
-					"path": [
-						"api",
-						"v0",
-						"filteredimage"
-					],
-					"query": [
-						{
-							"key": "image_url",
-							"value": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Deletes images (s3 access with aws-sdk)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://{{HOST}}/api/v0/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
-					"protocol": "http",
-					"host": [
-						"{{HOST}}"
-					],
-					"path": [
-						"api",
-						"v0",
-						"filteredimage"
-					],
-					"query": [
-						{
-							"key": "image_url",
-							"value": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -212,7 +134,7 @@
 	],
 	"variable": [
 		{
-			"id": "ce6c2600-19ab-40d3-a243-350857041470",
+			"id": "4251af7d-8042-4697-82fb-01aa556ab945",
 			"key": "HOST",
 			"value": "localhost:8082"
 		}
