@@ -6,7 +6,7 @@ const router: Router = Router();
 
   // Root Endpoint
   // Displays a simple message to the user
-  router.get( "/", async ( req, res ) => {
+  router.get( "/", async ( req: Request, res: Response ) => {
     res.send("try GET /api/v0/filteredimage?image_url={{}}")
   } );
 
@@ -26,7 +26,7 @@ const router: Router = Router();
 //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
 
 /**************************************************************************** */
-router.get( "/filteredimage", async ( req, res ) => {
+router.get( "/filteredimage", async ( req: Request, res: Response ) => {
 
     //////////////////////////////////////
     //    1. validate the image_url query 
